@@ -43,3 +43,7 @@ Optional parameters::
 `/api/v1/questions/<question_id>/`
 ----------------------------------
 Returns data about individual question
+
+`/api/v1/answers/<answer_id>/`
+----------------------------------
+Returns data about individual answer
