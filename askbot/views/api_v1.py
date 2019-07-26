@@ -115,7 +115,7 @@ def users(request):
         else:
             raise Exception("Order by method not allowed")
 
-        user_ids = models.UserProfile.objects.values_list('pk', flat=True)
+        user_ids = profiles.values_list('pk', flat=True)
         users = User.objects.filter(id__in=user_ids)
 
         paginator = Paginator(users, 10)
